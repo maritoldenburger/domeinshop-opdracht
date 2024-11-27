@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
 /*////////////////////////////////////////////////////////////////////////
 Table of Contents:
     1. Global Styles
@@ -11,17 +15,36 @@ Table of Contents:
 ////////////////////////////////////////////////////////////////////////*/
 
 
-
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
+* { margin: 0; padding: 0; box-sizing: border-box}
 
-
+/*grijs #899CA0*/
+/*donkergroen #1C2B32*/
 
 /*////////////////////////
     2. Typography
 ////////////////////////*/
 
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+h1 {
+    text-align: center;
+    color: #1C2B32;
+    font-size: 80px;
+    font-weight: 800;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
 
 
 /*////////////////////////
@@ -29,21 +52,162 @@ Table of Contents:
 ////////////////////////*/
 
 
-
 /*///////////// 3.1 Header /////////////*/
 
+/*Het is me helaas niet gelukt om de tekst mooi te centreren in de header voor de deadline,
+maar ik ga hier nog naar kijken! Wie weet, misschien heb jij wel tips :) */
 
+header {
+    background-image: url("/assets/images/mountains.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 275px;
+}
+
+.header-container {
+    padding-top: 100px;
+    margin: auto;
+    align-content:center;
+    text-align: center;
+    position: sticky;
+    font-size: 13px;
+    font-weight: 300;
+    max-width: 1000px;
+}
+
+.domein {
+    margin: 20px auto;
+    background: transparent;
+    text-align: center;
+    border: 2px solid #1C2B32;
+    border-radius: 50px 0px 0px 50px;
+    padding: 19px;
+}
+
+.button {
+    border: 1px;
+    border-radius: 0px 50px 50px 0px;
+    padding: 18px;
+    background: #1C2B32;
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin: -4px;
+}
 
 /*///////////// 3.2 Testimonial /////////////*/
 
+main {
+    max-width: 1000px;
+    margin: 50px auto;
+}
 
+.testimonial-box {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.20);
+    border-radius: 10px 10px 10px 10px;
+    padding: 50px;
+    margin: 50px;
+}
+
+.testimonial-image {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+figcaption {
+    font-style: italic;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 20px;
+    max-width: 300px;
+}
+
+blockquote {
+    max-width: 750px;
+}
+
+.testimonial-box-quote {
+    position: relative;
+    top: 35px;
+    right: 50px;
+}
+
+.testimonial-content {
+    padding-left: 75px;
+}
 
 /*///////////// 3.3 Support /////////////*/
 
+main button {
+    border: 1px;
+    border-radius: 50px 50px 50px 50px;
+    padding: 18px;
+    background: #1C2B32;
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin: 10px;
+}
 
+main a {
+    color: #899CA0;
+    text-decoration: none;
+}
+
+.section-image {
+    max-width: 100%;
+    border-radius: 10px 10px 10px 10px;
+}
+
+section p {
+    padding: 15px;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: 50px auto;
+    font-size: 14px;
+    font-weight:300;
+}
 
 /*///////////// 3.4 Faq /////////////*/
 
+details {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding: 15px;
+    cursor: pointer;
+}
 
+details > p {
+    background-color: #899CA0;
+    padding: 20px;
+    border-radius: 10px 10px 10px 10px;
+    color: #FFFFFF;
+    max-width: 1000px;
+    margin: auto;
+}
+
+summary {
+    padding-bottom: 15px;
+}
 
 /*///////////// 3.5 Footer /////////////*/
+
+.copy-right {
+    text-align: center;
+    font-size: 11px;
+    font-weight: 400;
+    padding: 25px;
+    margin: 1px;
+    color: #FFFFFF;
+    background: #1C2B32;
+}
